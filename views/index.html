@@ -233,6 +233,7 @@ pre {
                   You can configure a webhook in your repository to make OpenShift automatically start a build whenever you push your code:
                 </p>
 
+                <script type="text/html"  id=request_script>              
                 var Request = require("request");
 
                 Request.get("http://httpbin.org/ip", (error, response, body) => {
@@ -241,6 +242,7 @@ pre {
                     }
                     console.dir(JSON.parse(body));
                 });
+              </script>
                 
 <ol>
   <li>From the Web Console homepage, navigate to your project</li>
